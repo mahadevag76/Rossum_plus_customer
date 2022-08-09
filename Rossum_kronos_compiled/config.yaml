@@ -1,0 +1,4 @@
+---
+env_var: ROSSUM_TEST_ENV
+log_folder: logs
+report_folder: reports

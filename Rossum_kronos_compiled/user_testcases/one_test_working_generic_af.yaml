@@ -1,0 +1,9 @@
+---
+
+testfile:
+- user_testcases/one_test_working_generic.py
+default_timeout: 10800
+default_retry: 2
+tag:
+- all
+log: 1

@@ -1,0 +1,22 @@
+dashboard_ui_plugin:
+    enabled: false
+differ_plugin:
+    enabled: false
+can_plugin:
+    enabled: false
+score_board_ui_plugin:
+    enabled: false
+sock_server_plugin:
+    enabled: false
+cmdex:
+    enabled: true
+debug_logger_plugin:
+    enabled: true
+gdb_plugin:
+    enabled: false
+bgr_exec_plugin:
+    enabled: true
+local_logging_plugin:
+    enabled: true
+ssh_manager_plugin:
+    enabled: true

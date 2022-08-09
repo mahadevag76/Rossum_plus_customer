@@ -1,0 +1,10 @@
+excel_maker_plugin:
+    enabled: true
+print_summary_plugin:
+    enabled: true
+mail_notifier_plugin:
+    enabled: true
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    email: mahadevg@vayavyalabs.com
+    password: itphcgqqeurkqcxa

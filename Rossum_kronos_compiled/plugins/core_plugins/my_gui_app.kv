@@ -1,0 +1,137 @@
+<HeadLbl@Label>:
+    font_size: 22
+    pos_hint: [None, None]
+    color: 0, 0, 0, 1
+    size_hint: [.8,.4]
+
+<TxtLbl@Label>:
+    font_size: 18
+    pos_hint: [None, None]
+    color: 0, 0, 0, 1
+    size_hint: [.8,.4]
+
+<StatLbl@Label>:
+    font_size: 14
+    pos_hint: [None, None]
+    color: 0, 0, 0, 1
+    size_hint: [.8,.4]
+
+<Separator@Widget>:
+    canvas:
+        Color: 
+            rgba: 128 / 255., 128 / 255., 128 / 255., 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<HSeparator@Separator>:
+    size_hint_y: None
+    height: dp(2)
+
+<VSeparator@Separator>:
+    size_hint_x: None
+    width: dp(2)
+
+<MyPage>:
+    orientation: 'vertical'
+    padding: [0,0]
+    rows: 5
+    cols: 1
+
+    BoxLayout:
+        canvas: 
+            Color: 
+                rgba: 128 / 255., 128 / 255., 128 / 255., 1
+            Rectangle: 
+                pos: self.pos 
+                size: self.size 
+        size_hint: (1, 0.4)
+        orientation: 'horizontal'
+        padding: [0, 0]
+        GridLayout:
+            rows: 1
+            cols: 2
+            padding: [10,10]
+
+            Image:
+                source: 'core/plugins/VayavyaLabs-Logo.png'
+                size: self.texture_size
+                allow_stretch: True
+                keep_ratio: True
+                size_hint: (0.4, 1)
+
+            HeadLbl:
+                text: "Rossum Test Framework"
+
+    HSeparator
+
+    BoxLayout:
+
+        orientation: 'horizontal'
+        padding: [0, 0]
+
+        GridLayout:
+            rows: 5
+            cols: 2
+            padding: [10,10]
+
+            canvas: 
+                Color: 
+                    rgba: 192 / 255., 192 / 255., 192 / 255., 1
+                Rectangle: 
+                    pos: self.pos 
+                    size: self.size 
+
+            TxtLbl:
+                text: "Brake status"
+
+            TxtLbl:
+                id: Brake_st
+                text: root.Brake_st
+
+            TxtLbl:
+                text: "Vehicle Speed"
+
+            TxtLbl:
+                id: Vehicle_vSpeed
+                text: root.Vehicle_vSpeed
+
+            TxtLbl:
+                text: "Brake actuation sig1"
+
+            TxtLbl:
+                id: ABS_stPWM1
+                text: root.ABS_stPWM1
+
+            TxtLbl:
+                text: "Brake actuation sig2"
+
+            TxtLbl:
+                id: ABS_stPWM2
+                text: root.ABS_stPWM2
+
+            TxtLbl:
+                text: "Stopping distance"
+
+            TxtLbl:
+                id: ABS_dStpDistance
+                text: root.ABS_dStpDistance
+
+    HSeparator
+
+    BoxLayout:
+        canvas: 
+            Color: 
+                rgba: 128 / 255., 128 / 255., 128 / 255., 1
+            Rectangle: 
+                pos: self.pos 
+                size: self.size 
+        size_hint: (1, 0.1)
+        orientation: 'horizontal'
+        padding: [0, 0]
+        GridLayout:
+            rows: 1
+            cols: 2
+            padding: [10,10]
+            StatLbl:
+                text: root.Status1
