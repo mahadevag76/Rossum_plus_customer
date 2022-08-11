@@ -76,6 +76,11 @@ fi
 
 grep "ROSSUM_TEST_ENV" ~/.bashrc  > /dev/null
 if [ $? -eq 0 ]; then
+  pip3 install Flask==0.10.1 Flask-HTTPAuth==2.3.0 Flask-RESTful==0.3.1
+  pip3 install loguru==0.4.1 openpyxl==2.6.4 oyaml==1.0 pluggy==0.13.1
+  pip3 install pyexcel==0.5.15 pyexcel-io==0.5.20 pyexcel-xlsx==0.5.7 xmltodict==0.12.0
+  pip3 install openpyxl==2.6.4 distro==1.4.0 xlrd==2.0.1 paramiko==2.6.0 paramiko-expect==0.3.2 
+
   echo "The environment variables are already added in bashrc. Please do source ~/.bashrc"
   echo ""
   echo ""
@@ -83,6 +88,11 @@ if [ $? -eq 0 ]; then
   echo "      In case of other Shell, Please add environment variables manually."
   exit 1
 else
+  pip3 install Flask==0.10.1 Flask-HTTPAuth==2.3.0 Flask-RESTful==0.3.1
+  pip3 install loguru==0.4.1 openpyxl==2.6.4 oyaml==1.0 pluggy==0.13.1
+  pip3 install pyexcel==0.5.15 pyexcel-io==0.5.20 pyexcel-xlsx==0.5.7 xmltodict==0.12.0
+  pip3 install openpyxl==2.6.4 distro==1.4.0 xlrd==2.0.1 paramiko==2.6.0 paramiko-expect==0.3.2
+
   echo "The environment variables are added in bashrc. Please do source ~/.bashrc"
   echo "                                                "   >> ~/.bashrc
   echo "                                                "   >> ~/.bashrc
