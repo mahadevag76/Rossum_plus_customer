@@ -18,13 +18,13 @@ class my_sample_test(BaseClass):
 
     @BaseClass.test(tags=[["sanity_tc1"]])
     def test_case_1(self):
-<<<<<<< HEAD
+
         self.logger.info("print from TestCase 1")
         self.logger.info("-----------------")
-=======
+
         self.logger.info("print from the TestCase1")
         self.logger.info("----------------------------")
->>>>>>> f0774ed12f015abbd86536c3f049bb68563f5b94
+
         subprocess.Popen('cd ../../customer_code; make', shell=True)
         subprocess.Popen('cd ../../customer_code; make clean', shell=True)
     
