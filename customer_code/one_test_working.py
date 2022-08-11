@@ -25,8 +25,8 @@ class my_sample_test(BaseClass):
         self.logger.info("print from the TestCase1")
         self.logger.info("----------------------------")
 
-        subprocess.Popen('cd ../../customer_code; make', shell=True)
-        subprocess.Popen('cd ../../customer_code; make clean', shell=True)
+        subprocess.Popen('cd ../customer_code; make', shell=True)
+        subprocess.Popen('cd ../customer_code; make clean', shell=True)
     
         sleep(0.25)
         return (True)
